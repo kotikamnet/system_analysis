@@ -1,7 +1,4 @@
 
-```table-of-contents
-```
-
 
 ## Задание 
 
