@@ -55,7 +55,7 @@
 
 ## ERD 
 
-![erd](attachments/img1.drawio.png)
+![erd](attachments/img2.drawio.png)
 
 ## Словарь данных
 
