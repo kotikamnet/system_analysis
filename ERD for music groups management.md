@@ -46,7 +46,7 @@
 
 ## ERD 
 
-![[img1.drawio.png]]
+attachments/img1.drawio.png
 
 ## Словарь данных
 
