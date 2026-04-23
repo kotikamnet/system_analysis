@@ -80,7 +80,7 @@ SELECT
     s.creation_date AS 'Дата создания песни',
     g.group_name AS 'Название группы'
 FROM songs s
-JOIN musicians m ON s.composer_id = m.person_id
+JOIN musicians m ON s.composer_id = m.musician_id
 JOIN musicians l ON s.lyrics_author_id = l.musician_id
 JOIN groups g ON s.group_id = g.group_id
 WHERE s.song_name = 'Название песни';
