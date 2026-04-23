@@ -111,7 +111,8 @@ WHERE s.group_id = (
 – Цена билета на последний концерт указанной группы? 
 
 ```sql
--- Выбрать цену билета на концерт заданной группы из объединенной таблицы concerts, tours и groups, где дата концерта максимальная равна максимальной дате (из объединенной таблицы concerts, tours и groups) 
+-- Выбрать цену билета на концерт заданной группы из объединенной таблицы concerts, tours и groups,
+-- где дата концерта максимальная равна максимальной дате (из объединенной таблицы concerts, tours и groups) 
 
 SELECT c.ticket_price  
 FROM concerts c  
@@ -188,8 +189,11 @@ WHERE
 – Самый молодой вокалист? Какую группу он представляет? 
 
 ```sql
--- 1. Ищем вокалиста Искать по объединенным таблицам musicians, group_members, roles, groups. Отобрать по role_name в таблице group_members = вокалист
--- 2. Самый молодой = максимальный birth_date. Сравниваем его дату рождения с самой поздней, т.е birth_date = мексимальный birth_date из выборки musicians, group_members, roles, где role_name = вокалист
+-- 1. Ищем вокалиста Искать по объединенным таблицам musicians, group_members, roles, groups.
+-- Отобрать по role_name в таблице group_members = вокалист
+-- 2. Самый молодой = максимальный birth_date.
+-- Сравниваем его дату рождения с самой поздней, т.е birth_date = мексимальный birth_date
+-- из выборки musicians, group_members, roles, где role_name = вокалист
 
 SELECT 
     m.full_name AS "вокалист",
@@ -211,7 +215,8 @@ AND m.birth_date = (
 – В каких группах средний возраст исполнителей не превышает 20 лет? 
 
 ```sql
--- Из объединенных таблиц groups, musicians, group_members проведем группировку по названию группы groups, участники group_members которой имеют средний birth_date в таблице musicians не больше 20 лет.   
+-- Из объединенных таблиц groups, musicians, group_members проведем группировку по названию группы groups,
+-- участники group_members которой имеют средний birth_date в таблице musicians не больше 20 лет.   
 
 SELECT 
     g.group_name AS "группа",
