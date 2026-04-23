@@ -49,7 +49,7 @@
 
 ## ERD 
 
-![erd](Homeworks/attachments/img1.drawio.png)
+![erd](attachments/img1.drawio.png)
 
 ## Словарь данных
 
